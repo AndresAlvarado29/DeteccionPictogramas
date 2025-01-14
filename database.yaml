@@ -1,0 +1,7 @@
+
+train: /home/andres/ambientesVirtuales/PruebasML/Practicas/DatosEntrenamiento/newTrain
+val: /home/andres/ambientesVirtuales/PruebasML/Practicas/DatosEntrenamiento/newTest
+
+nc: 11
+names: ['doctor', 'mecanico', 'domestico', 'salvaje', 'noche', 'dia', 'montaña', 'playa', 'granja', 'dulce', 'saludable']
+

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>YOLO Detector</title>
+</head>
+<body>
+    <h1>YOLO Detector con TTS</h1>
+    <div>
+        <h3>Cámara</h3>
+        <img src="{{ url_for('video_feed') }}" width="640" height="480">
+    </div>
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+        <h3>Sube una imagen</h3>
+        <input type="file" name="image">
+        <button type="submit">Procesar</button>
+    </form>
+</body>
+</html>

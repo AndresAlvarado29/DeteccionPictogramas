@@ -1,0 +1,11 @@
+nvidia-pyindex
+nvidia-tensorrt
+onnx
+onnxruntime
+flask
+torch
+opencv-python
+soundfile
+transformers
+huggingface-hub
+albumentations
