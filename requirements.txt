@@ -2,10 +2,15 @@ nvidia-pyindex
 nvidia-tensorrt
 onnx
 onnxruntime
-flask
 torch
 opencv-python
 soundfile
 transformers
 huggingface-hub
 albumentations
+TTS
+opencv-contrib-python
+fastapi 
+uvicorn
+python-multipart 
+jinja2

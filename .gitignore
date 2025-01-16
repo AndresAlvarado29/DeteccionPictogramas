@@ -2,3 +2,7 @@ yolov5/
 *.csv
 *.jpg
 yolov5s.pt
+*.zip
+__pycache__/
+voz/
+*.wav
