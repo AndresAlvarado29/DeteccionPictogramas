@@ -51,7 +51,7 @@ while True:
     class_probs = detections[:, 5:]
 
     # Filtrar detecciones
-    confidence_threshold = 0.5
+    confidence_threshold = 0.4
     indices = confidences > confidence_threshold
 
     filtered_boxes = boxes[indices]
