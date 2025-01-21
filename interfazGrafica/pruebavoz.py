@@ -5,14 +5,14 @@ from TTS.api import TTS
 tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2", gpu=True)
 
 # Texto de entrada para la síntesis
-text = "Hola, esta es una prueba de conversión de texto a voz usando Coqui y quiero ver si esto me ayuda para mi tesis ya que quiero que esto se use cuando se haga la prediccion del pictograma"
+text = "Seduce, atrévete y se inolvidable Bross essence"
 
 # Ruta al archivo de voz objetivo (para clonación de voz)
 # Reemplaza con la ruta a tu archivo de audio de referencia
-speaker_wav = "voz/miVoz.wav"
+speaker_wav = "voz/vozPublicidad.wav"
 
 # Generar audio
-output_path = "voz/output.wav"
+output_path = "voz/outputPublicidadEn.wav"
 tts.tts_to_file(
     text=text,
     file_path=output_path,
