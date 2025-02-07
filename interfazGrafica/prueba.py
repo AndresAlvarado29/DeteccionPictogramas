@@ -13,7 +13,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Usando dispositivo: {device}")
 
 # Cargar modelo TorchScript
-model = torch.jit.load('./model/best9.torchscript')
+model = torch.jit.load('./model/newBest4.torchscript')
 model = model.to(device)
 
 # Configurar captura de video desde la cámara
@@ -51,7 +51,7 @@ while True:
     class_probs = detections[:, 5:]
 
     # Filtrar detecciones
-    confidence_threshold = 0.4
+    confidence_threshold = 0.3
     indices = confidences > confidence_threshold
 
     filtered_boxes = boxes[indices]

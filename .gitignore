@@ -6,3 +6,7 @@ yolov5s.pt
 __pycache__/
 voz/
 *.wav
+ultralytics/
+yolo11n.pt
+yolov10s.pt
+yolov10n.pt

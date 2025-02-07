@@ -18,7 +18,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Usando dispositivo: {device}")
 
 # Cargar modelo TorchScript
-model = torch.jit.load('./model/best9.torchscript')
+model = torch.jit.load('./model/newBest4.torchscript')
 model = model.to(device)
 model.eval()
 
@@ -31,7 +31,7 @@ if not cap.isOpened():
 
 # Diccionario para almacenar el último tiempo de reproducción por clase
 last_played = {class_name: 0 for class_name in class_names}
-delay_time = 5  # Delay en segundos entre reproducciones para la misma clase
+delay_time = 7  # Delay en segundos entre reproducciones para la misma clase
 
 # Procesamiento en tiempo real
 while True:
@@ -62,7 +62,7 @@ while True:
     class_probs = detections[:, 5:]
 
     # Filtrar detecciones
-    confidence_threshold = 0.4
+    confidence_threshold = 0.5
     indices = confidences > confidence_threshold
 
     filtered_boxes = boxes[indices]
